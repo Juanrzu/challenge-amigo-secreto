@@ -44,4 +44,19 @@ function lista(){
 }
 
 
+//realizar sorteo
+function sortearAmigo(){
+    if (amigos.length !== 0){
+        //preparar variables
+        let sorteo = Math.floor(Math.random()*amigos.length);
+        let resultados = document.getElementById('resultado');
+        
+        //mostrar amigo secreto
+        resultados.innerHTML =  `<li>Tu amigo secreto es: ${amigos[sorteo]}</li>`;
+        return sorteo;
+
+}
+
+}
+
 
