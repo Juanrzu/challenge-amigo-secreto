@@ -21,3 +21,9 @@ function agregarAmigo(){
     }
    
    
+//limpiar caja
+function limpiarCampo(){
+    let caja = document.getElementById('amigo').value= '';
+
+}
+
