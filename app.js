@@ -27,3 +27,21 @@ function limpiarCampo(){
 
 }
 
+//mostrar lista
+function lista(){
+    
+    //preparar variables
+    let listas= document.getElementById('listaAmigos');
+    listas.innerHTML = '';
+    let insertarAmgigos = '';
+    
+    //creando bucle for
+    for (contador = 0; contador < amigos.length; contador++ ){
+        insertarAmgigos += `<li>${amigos[contador]}</li>`;
+    }
+
+    listas.innerHTML = insertarAmgigos;
+}
+
+
+
